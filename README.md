@@ -22,10 +22,26 @@ This GitHub app automatically reminds issue creators to provide a time estimate 
     PATH_TO_PRIVATE_KEY=path_to_your_private_key.pem
     ```
 5. Run Smee to forward payloads to your local app:
-    `smee -u YOUR_SMEE_URL -t http://localhost:3000/webhooks/receive`
+    ```
+    smee -u YOUR_SMEE_URL -t http://localhost:3000/webhooks/receive`
+    ```
 6. Start the Rails server:
-    `rails server`
+    ```
+    rails server
+    ```
 
 ## Usage
 
 Once installed and running, the GitHub App will automatically add comments to newly opened issues that do not contain an "Estimate:" in their body.
+
+## Running Tests
+
+To run all tests:
+```
+rspec
+```
+
+To run a specific test file:
+```
+rspec path/to/spec_file.rb
+```
